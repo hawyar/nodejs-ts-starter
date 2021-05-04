@@ -16,7 +16,7 @@
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "author": "hawyar",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
     "@types/tap": "^15.0.0",
