@@ -1,0 +1,39 @@
+{
+  "name": "node-typescript-webpack-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "prepare": "husky install",
+    "start": "npm-run-all --parallel watch:server watch:build",
+    "watch:server": "nodemon \"./build/bundle.js\" --watch \"./build\" ",
+    "watch:build": "webpack --watch",
+    "build": "webpack",
+    "test:tap": "tap test/beep.ts --ts",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ava/typescript": "^1.1.1",
+    "@types/tap": "^15.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "ava": "^3.15.0",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-shopify": "^35.1.0",
+    "husky": "^6.0.0",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "^4.1.1",
+    "prettier": "^2.2.1",
+    "tap": "^15.0.6",
+    "ts-loader": "^3.0.5",
+    "ts-node": "^9.1.1",
+    "typescript": "^2.5.3",
+    "webpack": "^3.8.1"
+  }
+}

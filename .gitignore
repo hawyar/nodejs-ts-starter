@@ -1,0 +1,7 @@
+node_modules/
+build/
+.env
+.env.local
+.env.prod
+.env.test
+.nyc_output
