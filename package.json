@@ -1,5 +1,5 @@
 {
-  "name": "node-typescript-webpack-starter",
+  "name": "typescript-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -8,13 +8,14 @@
     "start": "npm-run-all --parallel watch:server watch:build",
     "watch:server": "nodemon \"./build/bundle.js\" --watch \"./build\" ",
     "watch:build": "webpack --watch",
+    "watch:test": "ava --watch",
     "build": "webpack",
-    "test:tap": "tap test/beep.ts --ts",
+    "test": "ava reset-cache | ava --tap | tap-summary",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
-  "author": "",
+  "author": "hawyar",
   "license": "ISC",
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
@@ -31,9 +32,23 @@
     "npm-run-all": "^4.1.1",
     "prettier": "^2.2.1",
     "tap": "^15.0.6",
+    "tap-summary": "^4.0.0",
     "ts-loader": "^3.0.5",
     "ts-node": "^9.1.1",
     "typescript": "^2.5.3",
     "webpack": "^3.8.1"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "webpack"
+  ],
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   }
 }
