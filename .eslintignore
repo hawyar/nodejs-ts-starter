@@ -1,3 +1,5 @@
 node_modules
 build
 webpack.config.js
+.nyc_output
+coverage

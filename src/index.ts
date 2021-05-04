@@ -13,5 +13,4 @@ class UserAccount {
   }
 }
 
-// eslint-disable-next-line no-unused-vars
-const user: User = new UserAccount('Murphy', 1);
+export const user: User = new UserAccount('Murphy', 1);
