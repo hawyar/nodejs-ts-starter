@@ -1,7 +1,7 @@
 {
   "name": "typescript-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "My custom typescript starter",
   "main": "index.ts",
   "scripts": {
     "prepare": "husky install",
