@@ -2,7 +2,7 @@
 
 ![Tests](https://github.com/hawyar/typescript-starter/actions/workflows/test.yml/badge.svg)
 
-> A minimal setup for Node.js with support for Typescipt. It is production-ready that comes with some sane defaults.
+> A minimal setup for Node.js with support for Typescipt. Configured with some sane defaults.
 
 ## Quick Overview
 
